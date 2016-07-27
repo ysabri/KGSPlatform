@@ -1,0 +1,27 @@
+{
+    "local": {
+    "provider": "local",
+    "module": "passport-local",
+    "usernameField": "username",
+    "passwordField": "password",
+    "authPath": "/auth/local",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/local",
+    "failureFlash": true
+    },
+    "google-link": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "126959146265-54o0ldc3903mnjkhugfa61bovrdbqvga.apps.googleusercontent.com",
+    "clientSecret": "DGigP95mk6crrhcWWbL9wKyC",
+    "callbackURL": "https://developers.google.com/oauthplayground",
+    "authPath": "/auth/google",
+    "callbackPath": "/link/google/callback",
+    "successRedirect": "/home",
+    "failureRedirect": "/",
+    "scope": ["email"],
+    "link": false,
+    "failureFlash": true
+    }
+}
